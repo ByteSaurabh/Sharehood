@@ -58,7 +58,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build --output public",
+    "build": "vite build --sourcemap",
     "serve": "vite preview"
   },
   "eslintConfig": {
