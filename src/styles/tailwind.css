@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode variables */
+    --color-background: #FEFCF8;
+    --color-foreground: #2D3436;
+    --color-card: #F5F2ED;
+    --color-card-foreground: #2D3436;
+    --color-popover: #FFFFFF;
+    --color-popover-foreground: #2D3436;
+    --color-muted: #F5F2ED;
+    --color-muted-foreground: #636E72;
+    --color-border: #F5F2ED;
+    --color-input: #FFFFFF;
+    --color-ring: #D4704A;
+    --color-primary: #D4704A;
+    --color-primary-foreground: #FFFFFF;
+    --color-secondary: #7A9B76;
+    --color-secondary-foreground: #FFFFFF;
+    --color-accent: #E8A87C;
+    --color-accent-foreground: #2D3436;
+    --color-success: #6C9A8B;
+    --color-success-foreground: #FFFFFF;
+    --color-warning: #E17055;
+    --color-warning-foreground: #FFFFFF;
+    --color-error: #D63031;
+    --color-error-foreground: #FFFFFF;
+    --color-destructive: #D63031;
+    --color-destructive-foreground: #FFFFFF;
+  }
+
+  .dark {
+    /* Dark mode variables */
+    --color-background: #181A1B;
+    --color-foreground: #F5F2ED;
+    --color-card: #232526;
+    --color-card-foreground: #F5F2ED;
+    --color-popover: #232526;
+    --color-popover-foreground: #F5F2ED;
+    --color-muted: #232526;
+    --color-muted-foreground: #B2B2B2;
+    --color-border: #232526;
+    --color-input: #232526;
+    --color-ring: #D4704A;
+    --color-primary: #D4704A;
+    --color-primary-foreground: #232526;
+    --color-secondary: #7A9B76;
+    --color-secondary-foreground: #232526;
+    --color-accent: #E8A87C;
+    --color-accent-foreground: #232526;
+    --color-success: #6C9A8B;
+    --color-success-foreground: #232526;
+    --color-warning: #E17055;
+    --color-warning-foreground: #232526;
+    --color-error: #D63031;
+    --color-error-foreground: #232526;
+    --color-destructive: #D63031;
+    --color-destructive-foreground: #232526;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-accent {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+@layer components {
+  .shadow-warm {
+    box-shadow: 0 4px 20px rgba(212, 112, 74, 0.1);
+  }
+  
+  .shadow-warm-lg {
+    box-shadow: 0 8px 30px rgba(212, 112, 74, 0.15);
+  }
+  
+  .border-warm {
+    border: 1px solid var(--color-border);
+  }
+  
+  .rounded-organic {
+    border-radius: 40px 60px 80px 20px;
+  }
+  
+  .transition-warm {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
